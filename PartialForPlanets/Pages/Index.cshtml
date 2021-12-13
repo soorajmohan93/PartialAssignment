@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Solar System</h1>
+    <p>Learn about Planets</a>.</p>
+</div>
+
+
+@if (Model.planet.Count != 0)
+{
+    @foreach (PartialForPlanets.Models.Planets planets in Model.planet)
+    {
+        <partial name="_PlanetsList" model="planets" />
+    }
+
+}

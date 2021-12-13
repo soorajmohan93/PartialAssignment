@@ -1,0 +1,23 @@
+﻿@model PartialForPlanets.Models.Planets
+@{
+}
+
+<section class="planet-card">
+    <header class="card-header">
+        <h3>@Model.Name</h3>
+        <p>@Model.Description</p>
+    </header>
+    <section class="card-numbers">
+        <div><span>Postion from Sun: @Model.Position</span></div>
+        <div><span>Size of planet: @Model.Size KM</span></div>
+    </section>
+    <hr />
+    <ul class="card-list">
+
+        @foreach (string feature in Model.Features)
+        {
+            <li>@feature</li>
+        }
+
+    </ul>
+</section>
