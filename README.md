@@ -5,3 +5,6 @@
 
 
 Application shows all planets and description in partial views. Position is int and Size is decimal type. It contains a List of features as well.
+
+
+Sample XML
